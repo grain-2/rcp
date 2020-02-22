@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?NLS TYPE="org.eclipse.help.toc"?>
+
+<toc label="Part 1  The Basic Part"  >
+	<topic label="Eclipse Profile" href="html/basic/1.html">
+		<topic label="Eclipse History、Situation and Future" href="html/basic/1_1.html"/>
+		<topic label="Eclipse Structure" href="html/basic/1_2.html"/>
+		<topic label="Eclipse Open Source" href="html/basic/1_3.html"/>
+	</topic>
+	<topic label="Eclipse Install and Configuration" href="html/basic/2.html">
+	    <topic label="Eclipse Download and Install" href="html/basic/2_1.html"/>
+	    <topic label="JDK Download and Install" href="html/basic/2_2.html"/>
+	</topic>
+</toc>

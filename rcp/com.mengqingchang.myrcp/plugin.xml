@@ -1,0 +1,141 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?eclipse version="3.2"?>
+<plugin>
+
+   <extension
+         id="application"
+         point="org.eclipse.core.runtime.applications">
+      <application>
+         <run
+               class="com.mengqingchang.myrcp.Application">
+         </run>
+      </application>
+   </extension>
+   <extension
+         point="org.eclipse.ui.perspectives">
+      <perspective
+            class="com.mengqingchang.myrcp.Perspective"
+            icon="icons/eclipse.gif"
+            id="com.mengqingchang.myrcp.perspective"
+            name="MyRCP Perspective">
+      </perspective>
+   </extension>
+   <extension
+         point="org.eclipse.ui.actionSets">
+      <actionSet
+            id="com.mengqingchang.myrcp.actionSet"
+            label="Sample Action Set"
+            visible="true">
+         <menu
+               id="sampleMenu"
+               label="样本菜单(&amp;M)">
+            <separator
+                  name="sampleGroup">
+            </separator>
+         </menu>
+         <action
+               class="com.mengqingchang.myrcp.actions.SampleAction"
+               icon="icons/sample.gif"
+               id="com.mengqingchang.myrcp.actions.SampleAction"
+               label="样本操作(&amp;S)"
+               menubarPath="sampleMenu/sampleGroup"
+               toolbarPath="sampleGroup"
+               tooltip="Hello, Eclipse world">
+         </action>
+      </actionSet>
+        
+   </extension>
+   <extension
+         point="org.eclipse.ui.views">
+     
+      <view
+           
+            class="com.mengqingchang.myrcp.views.SampleView1"
+            icon="icons/view1.gif"
+            id="com.mengqingchang.myrcp.view1"
+            name="SampleView1">
+      </view>
+      <view
+           
+            class="com.mengqingchang.myrcp.views.SampleView2"
+            icon="icons/view2.gif"
+            id="com.mengqingchang.myrcp.view2"
+            name="SampleView2">
+      </view>
+   </extension>
+   <extension
+         point="org.eclipse.ui.viewActions">
+      <viewContribution
+            id="com.mengqingchang.myrcp.viewContribution1"
+            targetID="com.mengqingchang.myrcp.view1">
+         <action
+               class="com.mengqingchang.myrcp.actions.ViewMenuAction"
+               icon="icons/sample1.gif"
+               id="com.mengqingchang.myrcp.action1"
+               label="ViewMenuAction"
+               menubarPath="additions"
+               style="push"
+               toolbarPath="additions">
+         </action>
+      </viewContribution>
+   </extension>
+   <extension
+         point="org.eclipse.ui.editors">
+      <editor
+            class="com.mengqingchang.myrcp.editors.SampleEditor"
+            icon="icons/sample3.gif"
+            id="com.mengqingchang.myrcp.editor1"
+            name="SampleEditor">
+      </editor>
+   </extension>
+   <extension
+         point="org.eclipse.ui.editorActions">
+      <editorContribution
+            id="com.mengqingchang.myrcp.editorContribution1"
+            targetID="com.mengqingchang.myrcp.editor1">
+         <menu
+               id="com.mengqingchang.myrcp.menu1"
+               label="&amp;Edit"
+               path="file">
+            <separator
+                  name="separator1">
+            </separator>
+         </menu>
+         <action
+               class="com.mengqingchang.myrcp.actions.SampleEditorMenuAction"
+               icon="icons/sample4.gif"
+               id="com.mengqingchang.myrcp.action1"
+               label="SampleEditorAcion"
+               menubarPath="com.mengqingchang.myrcp.menu1/separator1"
+               style="push"
+               toolbarPath="Normal/additions ">
+         </action>
+      </editorContribution>
+   </extension>
+   <extension
+         point="org.eclipse.ui.actionSets">
+      <actionSet
+            id="com.mengqingchang.myrcp.actionSet1"
+            label="actionSets"
+            visible="true">
+         <menu
+               id="com.mengqingchang.myrcp.menu1"
+               label="&amp;Run"
+               path="Window">
+            <separator
+                  name="separator1">
+            </separator>
+         </menu>
+         <action
+               class="com.mengqingchang.myrcp.actions.ProgressIndicatorAction"
+               icon="icons/debug.gif"
+               id="com.mengqingchang.myrcp.action1"
+               label="Debug"
+               menubarPath="com.mengqingchang.myrcp.menu1/separator1"
+               toolbarPath="additions"
+               tooltip="Debug  Jobs Progress">
+         </action>
+      </actionSet>
+   </extension>
+
+</plugin>

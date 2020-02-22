@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<contexts>
+   <context  id="tableId">
+   <description>表格帮助信息</description>
+       <topic href="html/context/1.html" label="帮助一"/>
+       <topic href="html/context/2.html" label="帮助二"/>
+       <topic href="html/context/3.html" label="帮助三"/>
+       <topic href="html/context/4.html" label="帮助四"/>
+       </context>
+      <context  id="mulEditorId">
+   <description>编辑器帮助信息</description>
+       <topic href="html/context/1.html" label="帮助一"/>
+       <topic href="html/context/2.html" label="帮助二"/>
+       <topic href="html/context/3.html" label="帮助三"/>
+       </context>
+</contexts>

@@ -1,0 +1,6 @@
+Manifest-Version: 1.0
+Bundle-ManifestVersion: 2
+Bundle-Name: Language Fragment
+Bundle-SymbolicName: HelloWorld.language
+Bundle-Version: 1.0.0
+Fragment-Host: HelloWorld;bundle-version="1.0.0"

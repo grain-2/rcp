@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?eclipse version="3.2"?>
+<plugin>
+
+   <extension
+         id="application"
+         point="org.eclipse.core.runtime.applications">
+      <application>
+         <run
+               class="com.mengqingchang.mymediaplayer.Application">
+         </run>
+      </application>
+   </extension>
+   <extension
+         point="org.eclipse.ui.perspectives">
+      <perspective
+            name="RCP Perspective"
+            class="com.mengqingchang.mymediaplayer.Perspective"
+            id="com.mengqingchang.myMediaPlayer.perspective">
+      </perspective>
+   </extension>
+   <extension
+         point="org.eclipse.ui.views">
+      <view
+            class="com.mengqingchang.mymediaplayer.views.MediaPlayerView"
+            id="com.mengqingchang.myMediaPlayer.view1"
+            name="MediaPlayerView">
+      </view>
+   </extension>
+   <extension
+         id="product"
+         point="org.eclipse.core.runtime.products">
+      <product
+            application="com.mengqingchang.myMediaPlayer.application"
+            name="MyMediaPlayer">
+         <property
+               name="appName"
+               value="MyMediaPlayer">
+         </property>
+         <property
+               name="startupForegroundColor"
+               value="000000">
+         </property>
+         <property
+               name="startupMessageRect"
+               value="7,252,445,20">
+         </property>
+         <property
+               name="startupProgressRect"
+               value="5,275,445,15">
+         </property>
+         <property
+               name="preferenceCustomization"
+               value="plugin_customization.ini">
+         </property>
+         <property
+               name="windowImages"
+               value="icons/alt_window_16.gif">
+         </property>
+      </product>
+   </extension>
+
+</plugin>

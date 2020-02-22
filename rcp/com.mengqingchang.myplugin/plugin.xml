@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?eclipse version="3.2"?>
+<plugin>
+   <extension
+         point="org.eclipse.ui.actionSets">
+      <actionSet
+            id="com.mengqingchang.myplugin.actionSet1"
+            label="Plugin Set"
+            visible="true">
+         <menu
+               id="com.mengqingchang.myplugin.menu1"
+               label="&amp;Open MyPlugin"
+               path="help/about">
+            <separator
+                  name="separator1">
+            </separator>
+            <separator
+                  name="separator2">
+            </separator>
+         </menu>
+         <action
+               class="com.mengqingchang.myplugin.action.HelloWorldAction"
+               icon="icon/eclipse.gif"
+               id="com.mengqingchang.myplugin.action1"
+               label="&amp;Open Plugin"
+               menubarPath="help/com.mengqingchang.myplugin.menu1/separator1"
+               style="push"
+               toolbarPath="org.eclipse.ui.workbench.file/new.group"
+               tooltip="Open Created Plugins">
+         </action>
+         <action
+               class="com.mengqingchang.myplugin.action.HelloWorldAction"
+               id="com.mengqingchang.myplugin.action2"
+               label="Open &amp;View"
+               menubarPath="help/com.mengqingchang.myplugin.menu1/separator2"
+               style="radio">
+         </action>
+         <action
+               class="com.mengqingchang.myplugin.action.HelloWorldAction"
+               id="com.mengqingchang.myplugin.action3"
+               label="Open &amp;Editor"
+               menubarPath="help/com.mengqingchang.myplugin.menu1/separator2"
+               style="toggle">
+         </action>
+      </actionSet>
+   </extension>
+</plugin>
+
+

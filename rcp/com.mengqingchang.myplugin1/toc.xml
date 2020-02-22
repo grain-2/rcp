@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<toc label="Eclipse Plugins/RCP Developerment Help" topic="html/toc.html">
+   <topic label="Part 1  The Basic Part">
+   <link toc="tobasic.xml"/>
+   </topic>
+   <topic label="Part 2 The Plugins Developerment Part">
+    <link toc="toplugins.xml"/> 
+   </topic>
+ </toc>

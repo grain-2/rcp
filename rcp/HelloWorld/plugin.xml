@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?eclipse version="3.2"?>
+<plugin>
+
+   <extension
+         point="org.eclipse.ui.actionSets">
+      <actionSet
+            label="%actionSet.label"
+            visible="true"
+            id="HelloWorld.actionSet">
+         <menu
+               label="%actionSet.menu.lable"
+               id="sampleMenu">
+            <separator
+                  name="sampleGroup">
+            </separator>
+         </menu>
+         <action
+               label="%actionSet.action.label"
+               icon="icons/sample.gif"
+               class="helloworld.actions.SampleAction"
+               tooltip="%actionSet.action.tooltip"
+               menubarPath="sampleMenu/sampleGroup"
+               toolbarPath="sampleGroup"
+               id="helloworld.actions.SampleAction">
+         </action>
+      </actionSet>
+   </extension>
+
+</plugin>

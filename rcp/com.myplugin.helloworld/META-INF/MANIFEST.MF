@@ -1,0 +1,10 @@
+Manifest-Version: 1.0
+Bundle-ManifestVersion: 2
+Bundle-Name: Helloworld Plug-in
+Bundle-SymbolicName: com.myplugin.helloworld; singleton:=true
+Bundle-Version: 1.0.0
+Bundle-Activator: com.myplugin.helloworld.Activator
+Bundle-Vendor: MYPLUGIN
+Require-Bundle: org.eclipse.ui,
+ org.eclipse.core.runtime
+Eclipse-LazyStart: true

@@ -1,0 +1,11 @@
+Manifest-Version: 1.0
+Bundle-ManifestVersion: 2
+Bundle-Name: Myplugin1 Plug-in
+Bundle-SymbolicName: com.mengqingchang.myplugin1; singleton:=true
+Bundle-Version: 1.0.0
+Bundle-Activator: com.mengqingchang.myplugin1.Activator
+Bundle-Vendor: MENGQINGCHANG
+Require-Bundle: org.eclipse.ui,
+ org.eclipse.core.runtime,
+ org.eclipse.help
+Eclipse-LazyStart: true

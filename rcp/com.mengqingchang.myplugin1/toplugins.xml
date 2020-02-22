@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?NLS TYPE="org.eclipse.help.toc"?>
+
+<toc label="Part 2 The Plugins Developerment Part"> 
+	<topic label="Initial Eclipse Plugins Develoment"  href="html/plugin/7.html"> 
+		<topic label="Eclipse Plugins Development Profile" href="html/plugin/7_1.html"/> 
+		<topic label="Configure Eclipse Plugins Product" href="html/plugin/7_2.html"/> 
+	</topic>
+ 	<topic label="Rewrite HelloWorld Pattern" href="html/plugin/8.html">
+	     <topic label="Add Workbench Menu" href="html/plugin/8_1.html"/>
+	</topic>
+</toc>
